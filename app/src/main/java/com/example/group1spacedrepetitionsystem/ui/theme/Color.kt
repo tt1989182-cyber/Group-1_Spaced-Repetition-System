@@ -1,4 +1,4 @@
-package com.example.group1spacedrepetitionsystem.ui.theme
+package com.example.estudapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -9,3 +9,10 @@ val Pink80 = Color(0xFFEFB8C8)
 val Purple40 = Color(0xFF6650a4)
 val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
+
+val PrimaryBlue = Color(0xFF5665CE)
+val ErrorRed = Color(0xFFFF1717)
+val LightGray= Color(0xFFDBDEEF)
+val Black = Color(0xFF161616)
+val White = Color(0xFFF5F4F2)
+val DarkBlue = Color(0xFF170334)
