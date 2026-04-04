@@ -1,3 +1,70 @@
 <resources>
-    <string name="app_name">Group 1 Spaced Repetition System</string>
+    <string name="app_name">Estuda++</string>
+    
+    <!-- Màn hình Đăng nhập (SignIn) -->
+    <string name="email_label">E-mail</string>
+    <string name="email_placeholder">vi-du@email.com</string>
+    <string name="password_label">Mật khẩu</string>
+    <string name="password_placeholder">********</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="no_account_yet">Chưa có tài khoản?</string>
+    <string name="show_password">Hiển thị mật khẩu</string>
+    <string name="hide_password">Ẩn mật khẩu</string>
+
+    <!-- Màn hình Đăng ký (SignUp) -->
+    <string name="name_label">Họ và tên</string>
+    <string name="name_placeholder">Nguyễn Văn A</string>
+    <string name="btn_register">Đăng ký</string>
+    <string name="already_have_account">Đã có tài khoản?</string>
+    <string name="error_loading_name">Lỗi khi tải tên</string>
+
+    <!-- Màn hình Chính (Home) -->
+    <string name="welcome_user">Chào mừng,\n%1$s</string>
+    <string name="current_study_location">Địa điểm học tập hiện tại</string>
+    <string name="home_question">Hôm nay bạn sẽ đạt điểm cao hơn như thế nào?</string>
+    <string name="view_my_decks">Xem các\nbộ thẻ của tôi</string>
+    <string name="study_label">Học tập</string>
+    <string name="learn_more_ai">Tìm hiểu thêm\nvới MonitorIA</string>
+    <string name="ask_questions">Giải đáp thắc mắc</string>
+    <string name="profile_and_locations">Hồ sơ và\nvị trí</string>
+    <string name="your_profile">Hồ sơ của bạn</string>
+
+    <!-- Màn hình Danh sách bộ thẻ (DeckList) -->
+    <string name="decks_title">Bộ thẻ học</string>
+    <string name="create_new_deck">Tạo bộ thẻ mới</string>
+    <string name="no_decks_message">Bạn chưa có bộ thẻ nào :\\</string>
+    <string name="upcoming_reviews">Sắp đến hạn ôn tập</string>
+    <string name="my_decks">Bộ thẻ của tôi</string>
+
+    <!-- Màn hình Học tập (Study) -->
+    <string name="study_title">Học tập</string>
+    <string name="empty_deck_message">Bạn đã hoàn thành hết các thẻ của hôm nay rồi! Hãy quay lại vào ngày mai nhé.</string>
+    <string name="session_finished_title">Tuyệt vời!</string>
+    <string name="session_finished_msg">Bạn đã hoàn thành phiên học này.</string>
+    <string name="back_to_list">Quay lại danh sách</string>
+    <string name="show_answer">Hiện đáp án</string>
+    <string name="check_answer">Kiểm tra</string>
+    <string name="how_was_it">Bạn thấy thẻ này thế nào?</string>
+    <string name="hard_label">Khó</string>
+    <string name="medium_label">T.Bình</string>
+    <string name="easy_label">Dễ</string>
+    <string name="days_suffix">+%1$d ngày</string>
+
+    <!-- Lỗi & Thông báo Chat -->
+    <string name="chat_placeholder">Nhập câu hỏi của bạn...</string>
+    <string name="error_ai_process">Lỗi khi xử lý phản hồi từ AI. Vui lòng thử lại sau.</string>
+    <string name="error_no_auth">Người dùng chưa đăng nhập.</string>
+    <string name="error_server">Lỗi máy chủ: %1$d</string>
+    <string name="error_connection">Lỗi kết nối: %1$s</string>
+    <string name="error_timeout">IA phản hồi quá chậm. Vui lòng thử lại.</string>
+
+    <!-- Câu hỏi gợi ý -->
+    <string name="suggest_1">MonitorIA có thể giúp gì cho tôi?</string>
+    <string name="suggest_2">Làm sao để nhớ Flashcard lâu hơn?</string>
+    <string name="suggest_3">Mẹo tạo bộ thẻ học hiệu quả?</string>
+    <string name="suggest_4">Giải thích về phương pháp lặp lại ngắt quãng</string>
+
+    <!-- Chat & Flashcards -->
+    <string name="create_flashcard">Tạo thẻ ghi nhớ</string>
+    <string name="flashcards_count">%1$d thẻ</string>
 </resources>
