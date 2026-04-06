@@ -14,6 +14,10 @@ import com.example.estudapp.navigate.EPPNavHost
 import com.example.estudapp.ui.feature.auth.AuthViewModel
 import com.example.estudapp.ui.theme.EstudaTheme
 import com.example.estudapp.utils.WorkManagerHelper
+import com.google.firebase.FirebaseApp
+import com.google.firebase.appcheck.debug.DebugAppCheckProviderFactory
+import com.google.firebase.appcheck.ktx.appCheck
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : ComponentActivity() {
     
@@ -30,6 +34,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        // Khởi tạo Firebase App Check với Debug Provider để hỗ trợ môi trường phát triển (và khi sai ngày giờ)
+        FirebaseApp.initializeApp(this)
+        val firebaseAppCheck = Firebase.appCheck
+        firebaseAppCheck.installAppCheckProviderFactory(
+            DebugAppCheckProviderFactory.getInstance()
+        )
         
         val authViewModel : AuthViewModel by viewModels()
 
