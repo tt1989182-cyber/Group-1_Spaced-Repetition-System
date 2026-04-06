@@ -506,7 +506,7 @@ class FlashcardViewModel : ViewModel() {
                     return@launch
                 }
 
-                // Configura a conexão HTTP
+                
                 val url = URL("https://estudapp-api-293741035243.southamerica-east1.run.app/deck-sessions")
                 val connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = "POST"
