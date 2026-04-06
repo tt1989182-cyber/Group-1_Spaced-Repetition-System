@@ -86,7 +86,7 @@ class FlashcardViewModel : ViewModel() {
         _saveStatus.value = SaveStatus.Idle
     }
 
-    // --- Funções de SALVAR ---
+   
     private fun save(deckId: String, flashcard: FlashcardDTO) {
         viewModelScope.launch {
             _saveStatus.value = SaveStatus.Loading
