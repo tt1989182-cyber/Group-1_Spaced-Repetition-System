@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        // Khởi tạo Firebase App Check với Debug Provider để hỗ trợ môi trường phát triển (và khi sai ngày giờ)
+        // Khởi tạo Firebase App Check với Debug Provider để hỗ trợ môi trường phát triển
         FirebaseApp.initializeApp(this)
         val firebaseAppCheck = Firebase.appCheck
         firebaseAppCheck.installAppCheckProviderFactory(
