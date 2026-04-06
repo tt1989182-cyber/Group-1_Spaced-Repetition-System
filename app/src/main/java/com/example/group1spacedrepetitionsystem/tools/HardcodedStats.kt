@@ -23,7 +23,7 @@ object HardcodedStats {
         val (lat, lng) = randomLatLng()
         session.setLocation(lat, lng)
 
-        // Frente/Verso → 0/0
+        
         session.addFrenteVerso(cardId = "cardFV_demo")
         // Múltipla → correta
         session.addMultiplaEscolha(cardId = "cardMC_demo", isCorrect = true)
