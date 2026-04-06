@@ -114,7 +114,6 @@ fun CreateFlashcardScreen(
                             val label = when(tabType) {
                                 FlashcardTypeEnum.FRENTE_VERSO -> "Cơ bản"
                                 FlashcardTypeEnum.CLOZE -> "Điền từ"
-                                FlashcardTypeEnum.DIGITE_RESPOSTA -> "Nhập liệu"
                                 FlashcardTypeEnum.MULTIPLA_ESCOLHA -> "Trắc nghiệm"
                             }
                             Text(label, fontSize = 12.sp)
