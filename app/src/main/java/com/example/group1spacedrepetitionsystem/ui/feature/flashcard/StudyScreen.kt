@@ -244,7 +244,7 @@ fun ColumnScope.StudyCardContent(
             Spacer(Modifier.height(8.dp))
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
                 DifficultyBtn("Khó", 1, Color(0xFFFF5252), onDifficultySelected)
-                DifficultyBtn("T.Bình", 3, Color(0xFFFFB74D), onDifficultySelected)
+                DifficultyBtn("Trung bình", 3, Color(0xFFFFB74D), onDifficultySelected)
                 DifficultyBtn("Dễ", 5, Color(0xFF81C784), onDifficultySelected)
             }
         }
