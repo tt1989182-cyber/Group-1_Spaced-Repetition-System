@@ -81,7 +81,6 @@ class ChatViewModel : ViewModel() {
     }
 
     private suspend fun simulateAIResponse(userText: String) {
-        // Giả lập thời gian suy nghĩ (1-2 giây)
         delay(1500)
 
         val responseText = when {
@@ -100,7 +99,6 @@ class ChatViewModel : ViewModel() {
             else -> "Tôi đã nhận được câu hỏi của bạn. Đây là chế độ trả lời tự động của MonitorIA để đảm bảo hệ thống luôn hoạt động ổn định."
         }
 
-        // Gửi phản hồi giả lập vào Firebase
         repository.sendDirectMessage(responseText, "ASSISTANT")
     }
 
