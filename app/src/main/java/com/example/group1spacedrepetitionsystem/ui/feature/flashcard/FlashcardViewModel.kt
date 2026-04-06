@@ -489,9 +489,7 @@ class FlashcardViewModel : ViewModel() {
         }
     }
 
-    /**
-     * Envia os dados da sessão para a API após salvar no Firebase
-     */
+    
     private fun sendSessionToAPI(sessionId: String, deckId: String) {
         viewModelScope.launch(Dispatchers.IO) {
             val user = FirebaseAuth.getInstance().currentUser
