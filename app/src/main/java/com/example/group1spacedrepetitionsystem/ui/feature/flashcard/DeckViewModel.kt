@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-// ViewModel para gerenciar a lógica dos Decks
+
 class DeckViewModel : ViewModel() {
 
     private val repository = FlashcardRepository()
