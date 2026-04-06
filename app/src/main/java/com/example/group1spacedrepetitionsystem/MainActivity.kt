@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
         
         val authViewModel : AuthViewModel by viewModels()
 
-        // Kiểm tra và xin quyền thông báo
+        // Kiểm tra & xin quyền thông báo
         checkNotificationPermission()
 
         setContent {
