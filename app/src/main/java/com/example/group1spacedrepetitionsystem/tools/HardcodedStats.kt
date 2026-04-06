@@ -13,7 +13,6 @@ object HardcodedStats {
 
     private const val TAG = "HardcodedStats"
 
-    /** Grava sessão DEMO com IDs “fake” + lat/lng aleatórios. */
     suspend fun writeSampleSession(deckId: String) {
         val uid = FirebaseAuth.getInstance().currentUser?.uid
             ?: throw IllegalStateException("Usuário não autenticado.")
