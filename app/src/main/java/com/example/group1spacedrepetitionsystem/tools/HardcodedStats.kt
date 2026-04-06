@@ -59,7 +59,7 @@ object HardcodedStats {
         val sessionId = repo.saveDeckSessionStat(session.build()).getOrElse { throw it }
         Log.i(TAG, "Sessão REAL salva em stats/$uid/$deckId/$sessionId (lat=$lat, lng=$lng)")
     }
-
+// nen
     private fun simulateCard(session: DeckSessionManager, card: FlashcardDTO, idx: Int) {
         val id = card.id ?: return
         when (card.type) {
