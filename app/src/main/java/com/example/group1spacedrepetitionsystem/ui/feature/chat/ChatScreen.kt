@@ -30,8 +30,7 @@ import com.example.estudapp.R
 import com.example.estudapp.data.model.SimpleChatMessageDTO
 import com.example.estudapp.ui.theme.Black
 import com.example.estudapp.ui.theme.LightGray
-import com.example.estudapp.ui.theme.PrimaryBlue
-import com.example.estudapp.ui.theme.PrimaryGreen
+
 import com.example.estudapp.ui.theme.White
 
 @OptIn(ExperimentalMaterial3Api::class)
