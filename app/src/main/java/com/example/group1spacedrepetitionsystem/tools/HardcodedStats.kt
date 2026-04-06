@@ -50,7 +50,7 @@ object HardcodedStats {
 
         val session = DeckSessionManager(deckId, uid)
 
-        // NOVO: localização aleatória
+        
         val (lat, lng) = randomLatLng()
         session.setLocation(lat, lng)
 
