@@ -21,7 +21,7 @@ import com.google.firebase.ktx.Firebase
 
 class MainActivity : ComponentActivity() {
     
-    // Xin quyền thông báo cho Android 13+
+    // Xin quyền thông báo
     private val requestPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { isGranted: Boolean ->
