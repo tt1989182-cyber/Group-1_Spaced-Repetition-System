@@ -13,7 +13,6 @@ object HardcodedStats {
 
     private const val TAG = "HardcodedStats"
 
-    /** Grava sessão DEMO com IDs “fake” + lat/lng aleatórios. */
     suspend fun writeSampleSession(deckId: String) {
         val uid = FirebaseAuth.getInstance().currentUser?.uid
             ?: throw IllegalStateException("Usuário não autenticado.")
@@ -24,7 +23,7 @@ object HardcodedStats {
         val (lat, lng) = randomLatLng()
         session.setLocation(lat, lng)
 
-        // Frente/Verso → 0/0
+        
         session.addFrenteVerso(cardId = "cardFV_demo")
         // Múltipla → correta
         session.addMultiplaEscolha(cardId = "cardMC_demo", isCorrect = true)
@@ -39,7 +38,7 @@ object HardcodedStats {
         Log.i(TAG, "Sessão DEMO salva em stats/$uid/$deckId/$sessionId (lat=$lat, lng=$lng)")
     }
 
-    /** Grava sessão usando os cards reais do deck + lat/lng aleatórios. */
+  
     suspend fun writeSessionFromExistingCards(deckId: String) {
         val uid = FirebaseAuth.getInstance().currentUser?.uid
             ?: throw IllegalStateException("Usuário não autenticado.")
@@ -51,7 +50,7 @@ object HardcodedStats {
 
         val session = DeckSessionManager(deckId, uid)
 
-        // NOVO: localização aleatória
+        
         val (lat, lng) = randomLatLng()
         session.setLocation(lat, lng)
 
@@ -60,7 +59,7 @@ object HardcodedStats {
         val sessionId = repo.saveDeckSessionStat(session.build()).getOrElse { throw it }
         Log.i(TAG, "Sessão REAL salva em stats/$uid/$deckId/$sessionId (lat=$lat, lng=$lng)")
     }
-
+// nen
     private fun simulateCard(session: DeckSessionManager, card: FlashcardDTO, idx: Int) {
         val id = card.id ?: return
         when (card.type) {
