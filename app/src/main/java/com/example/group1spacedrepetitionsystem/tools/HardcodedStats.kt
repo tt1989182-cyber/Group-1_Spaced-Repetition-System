@@ -39,7 +39,7 @@ object HardcodedStats {
         Log.i(TAG, "Sessão DEMO salva em stats/$uid/$deckId/$sessionId (lat=$lat, lng=$lng)")
     }
 
-    /** Grava sessão usando os cards reais do deck + lat/lng aleatórios. */
+  
     suspend fun writeSessionFromExistingCards(deckId: String) {
         val uid = FirebaseAuth.getInstance().currentUser?.uid
             ?: throw IllegalStateException("Usuário não autenticado.")
