@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Estuda++"
+rootProject.name = "Group-1_Spaced-Repetition-System"
 include(":app")
  
